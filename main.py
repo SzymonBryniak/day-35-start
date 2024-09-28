@@ -21,8 +21,10 @@ def check_precipitation(weather):
         for key, value in i.items():
             if key == "weather":
                 for ii in value:
-                    if ii.get('id') >= 700:
+                    if ii.get('id') < 700:
                         print('Bring umbrella', ii.get('id'))
+                    else:
+                        print(ii.get('main'))
             if key == "dt_txt":
                 print(value)
 
