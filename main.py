@@ -6,12 +6,12 @@ password = "aruj ltqt spax soaw"
 username = "szymonbryniakproject@gmail.com"
 to_addrs = "oneplusszymonbryniak@gmail.com"
 
-api_key = "458f91702912ebbea1aea9bbdd8f4ace"
+api_key = os.environ.get("OWM_API_KEY")
 # os.environ['OWM_API_KEY'] = '458f91702912ebbea1aea9bbdd8f4ace'
 print(os.environ.get("ALLUSERSPROFILE"))
-print(os.environ.get("OWM_API_KEY"))
+# print(os.environ.get("OWM_API_KEY"))
 # api_key = os.environ.get("OWM_API_KEY") # unable to get the env variable
-print(api_key)
+
 endpoint = "https://api.openweathermap.org/data/2.5/forecast?"
 params = {
     "lat": 52.2021814,
